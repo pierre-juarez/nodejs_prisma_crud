@@ -1,0 +1,46 @@
+### GET - All tasks
+GET http://localhost:3000/tasks
+Content-Type: application/json
+
+
+### POST - Add task
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+  "title": "Mi segunda tarea",
+  "description": "Esta es una tarea de prueba"
+}
+
+### GET - All tasks - Found
+GET http://localhost:3000/tasks/1
+Content-Type: application/json
+
+### GET - All tasks - Not found
+GET http://localhost:3000/tasks/15
+Content-Type: application/json
+
+### DELETE - Task by ID - Found
+DELETE http://localhost:3000/tasks/1
+Content-Type: application/json
+
+### DELETE - Task by ID - Not found
+DELETE http://localhost:3000/tasks/135
+Content-Type: application/json
+
+### UPDATE - Task - Found
+PUT http://localhost:3000/tasks/3
+Content-Type: application/json
+
+{
+  "title": "Mi tercera tarea"
+}
+
+### UPDATE - Task - Not found
+PUT http://localhost:3000/tasks/335
+Content-Type: application/json
+
+{
+  "title": "Mi tercera tarea",
+  "description": "Esta es una tarea de prueba"
+}
